@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title> Open Weather API
+        </title>
+        
+        <link href="css/stylesheet.css" rel="stylesheet">
+        <link rel="shortcut icon" type="image/x-icon" href="../openWeatherAPI/images/favicon.ico"> 
+
+    </head>
+    
+    <body>
+        <h1> OPEN WEATHER API</h1>
+        
+        <p> <input id="locationName" type="text" placeholder="Enter a city name "> 
+            <button id="myButton"> SEARCH </button> </p>
+        
+        
+        <section id = "left">
+        <div id="place"></div> 
+        <div>
+            <img src= "images/cloud.png" id="imageToday" class="weatherImg" >
+        </div>
+        <div id="dayDesc">   </div>
+        <div id="temperature"></div>
+        
+        <!--<p> Max Temperature: </p>--> 
+        
+        <div>
+        <span id="highTemp">  </span>
+                
+        
+       <!-- <p> Min Temperature: </p>-->
+        <span id="lowTemp">   </span>
+        </div>
+        <!--<p>Weather Description: </p>-->
+        
+        
+        </section>
+        <br/>
+        
+        
+        
+        <section id="right">
+        <div id = "fourdays"> </div>
+        <div>
+        <span id="weekdays"> </span> 
+        <span > <img id="temperatureForecast"> </span> 
+        </div>
+    
+        
+    </section> 
+        
+        <script src="js/myScript.js"> </script>
+        
+    </body>
+</html>

@@ -1,0 +1,181 @@
+body{
+    
+    background-image:url(../images/lake.jpg);
+    background-size:cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin-top: 20px;
+    height: 100vh;
+    /*width: 80%;*/
+    
+}
+
+h1{
+    font-size: 30px;
+    font-family: monospace;
+}
+
+#header{
+    height: 50px;
+    width: auto;
+    background: blue;
+}
+
+.container{
+    width: 80%;
+    text-align: left;
+}
+
+#locationName[type=text] {
+    width: 400px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+#locationName[type=text]:focus {
+    width: 40%;
+}
+
+button {
+    
+    background-color: skyblue; 
+    border: 1px solid 3px;
+    color: black;
+    font-weight: bold;
+    font-family:sans-serif;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+button:hover{
+    background-color: dodgerblue;
+    border-color: gainsboro;
+}
+
+#locationName{
+    height: 40px;
+    width: 40%;
+    
+    background-color: azure;
+    padding-left: 2%;
+    outline: none;
+    border: none;
+    cursor: default;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+#errorMessage{
+    
+    font-weight: bold;
+    font-size: 30px;
+    color: red;
+}
+
+main{
+    width: 80%;
+    text-align: center;
+}
+
+.weatherImg {
+    height:80px ;
+    width:100px;
+    
+}
+
+
+#currentWeather{
+    text-align: left !important;
+    /*width: 30%;*/
+}
+
+
+#temperature{
+    font-size: 40px;
+}
+/*#right{
+    text-align: right !important;
+    width: 70%;
+}*/
+
+hr{
+    width: 50%;
+}
+
+#place{
+    font-size: 30px;
+    /*text-transform: uppercase;*/
+    color: darkred;
+}
+
+#fourdays{
+    text-decoration: underline solid #ff4d4d;
+    font-weight: bold;
+    font-size: 30px;
+    color:#ff4d4d;
+}
+
+/*
+#weekdays span{
+    color: darkblue;
+}
+*/
+
+#left{
+    
+    /*float: left;*/
+    /*text-align: left;*/
+    /*padding-left: 20%;*/
+    font-weight: bold;
+    border: 1px 1px 1px solid black;
+}
+
+#right span{
+    padding-left: 10px;
+    /*float: none;*/
+    font-weight: bolder;
+    color: white;
+   
+   /* position: relative; */
+}
+
+
+
+/*MEDIA QUERIES  */
+
+@media only screen and (max-width: 980px) {
+    body{padding-top: 150px;}
+    
+}
+
+@media only screen and (max-width:360px){
+    body{padding-top: 20px;}
+    
+    #fourdays{
+    text-decoration: underline solid white;
+    
+    font-size: 20px;
+    color:white;
+}
+    #locationName{
+    height: 40px;
+    width: 50px;
+    
+    
+    font-size: 15px;
+    
+}
+
+    #locationName[type=text]:focus {
+    width: 40%;
+}
+}
